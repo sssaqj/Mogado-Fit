@@ -22,7 +22,7 @@ $(function(){
 /*------------------------------------
 Fade anime
 ------------------------------------*/
-if(window.matchMedia("(max-width: 768px)").matches){
+if(window.matchMedia("(max-width: 600px)").matches){
   function fadeAnime(){
     $('.fadeLeftTriger').each(function(){
       var elemPos = $(this).offset().top-50;
