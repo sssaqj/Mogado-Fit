@@ -83,7 +83,7 @@
   }
   .maps .google-map iframe {
     width: 90vw;
-    margin: 0 calc(50vw - 114%);
+/*     margin: 0 calc(50vw - 114%); */
   }
   /*------------------------------------
   Contact
@@ -248,7 +248,12 @@
   }
   .maps .google-map iframe {
     height: 130%;
-    margin: 0 calc(50vw - 98%);
+  }
+  /*------------------------------------
+  contact
+  ------------------------------------*/
+  .contact-grid {
+    margin: 0 10px;
   }
 }
 
