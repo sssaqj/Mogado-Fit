@@ -22,27 +22,32 @@ $(function(){
 /*------------------------------------
 Fade anime
 ------------------------------------*/
-if(window.matchMedia("(max-width: 600px)").matches){
-  function fadeAnime(){
-    $('.fadeLeftTriger').each(function(){
-      var elemPos = $(this).offset().top-50;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
-      if(scroll >= elemPos - windowHeight){
-        $(this).addClass('fadeLeft');
-      }
-    });
+// $(function(){
+//   if(window.matchMedia("(min-width: 601px)").matches){
+    function fadeAnime(){
+      $('.fadeLeftTriger').each(function(){
+        var elemPos = $(this).offset().top-50;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if(scroll >= elemPos - windowHeight){
+          $(this).addClass('fadeLeft');
+        }
+      });
 
-    $('.fadeRightTriger').each(function(){
-      var elemPos = $(this).offset().top-50;
-      var scroll = $(window).scrollTop();
-      var windowHeight = $(window).height();
-      if(scroll >= elemPos - windowHeight){
-        $(this).addClass('fadeRight');
-      }
-    });
-  }
-}
+      $('.fadeRightTriger').each(function(){
+        var elemPos = $(this).offset().top-50;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if(scroll >= elemPos - windowHeight){
+          $(this).addClass('fadeRight');
+        }
+      });
+    }
+//   } else {
+//     ;
+//   }
+// });
+
 
 
 /*------------------------------------
@@ -73,3 +78,6 @@ nav_item.on('click', function(){
   ham.toggleClass('active');
   nav.toggleClass('active');
 });
+if ($('.hamburger-menu').is(':visible')) {
+  // アニメーションを実行するコード
+}
