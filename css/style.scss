@@ -72,7 +72,7 @@ common-settings
   border: 3px solid rgba(108, 45, 34, 0.4);
   border-radius: 50%;
   bottom: 50px;
-  right: 50px;
+  right: 25px;
   cursor: pointer;
   z-index: 20;
 }
@@ -91,7 +91,7 @@ common-settings
 MAINVISUAL
 ------------------------------------*/
 .mainvisual {
-  background: url(/Users/sana/Desktop/programs/HTML/テストHP/ポートフォリオ/フィットネス３/img/mainvisual.jpg) no-repeat center center/cover;
+  background: url(../img/mainvisual.jpg) no-repeat center center/cover;
   height: calc(100vh - 60px);
   display: flex;
   justify-content: center;
@@ -342,6 +342,8 @@ MAPS
   width: 85%;
   height: 0;
   padding-top: 45%;
+  // margin-left: 0;
+  // margin-right: 0;
   iframe{
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -359,7 +361,7 @@ MAPS
 CONTACT
 ------------------------------------*/
 .contact-container{
-  background: url(/Users/sana/Desktop/programs/HTML/テストHP/ポートフォリオ/フィットネス３/img/contact.jpg) no-repeat center center/cover;
+  background: url(../img/contact.jpg) no-repeat center center/cover;
   color: #f0f0f0;
   padding-bottom: 100px;
 }
